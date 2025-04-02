@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autism User Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-left: 250px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 15px;
+            background: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Autism User Registration</h2>
+        <form>
+            <label for="username">User Name:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="father">Father's Name:</label>
+            <input type="text" id="father" name="father">
+
+            <label for="mother">Mother's Name:</label>
+            <input type="text" id="mother" name="mother">
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="parent_contacts">Parent Contact:</label>
+            <input type="tel" id="parent_contacts" name="parent_contacts" required>
+
+            <label for="neurodiverse_history">Parents' Neurodiverse History (if any):</label>
+            <input type="text" id="neurodiverse_history" name="neurodiverse_history">
+
+            <label for="teacher_name">Teacher's Name:</label>
+            <input type="text" id="teacher_name" name="teacher_name">
+
+            <label for="teacher_contact">Teacher's Contact:</label>
+            <input type="tel" id="teacher_contact" name="teacher_contact">
+
+            <label for="class_name">Class Name:</label>
+            <select id="class_name" name="class_name">
+                <option value="year1">Year 1</option>
+                <option value="year2">Year 2</option>
+                <option value="year3">Year 3</option>
+                <option value="year4">Year 4</option>
+                <option value="year5">Year 5</option>
+                <option value="year6">Year 6</option>
+                <option value="year7">Year 7</option>
+                <option value="year8">Year 8</option>
+                <option value="year9">Year 9</option>
+                <option value="year10">Year 10</option>
+            </select>
+
+            <label for="autism_type">Autism Type:</label>
+            <select id="autism_type" name="autism_type">
+                <option value="asd">Auditory Issue</option>
+                <option value="aspergers">Visual Issue</option>
+                <option value="pdd">Olfactory (smell) Issue</option>
+                <option value="other">Tactile Sensitivity</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
