@@ -1,0 +1,3 @@
+# List of Dependent Libraries
+# Basic dependencies (no special hardware required)
+numpy==1.24.3
